@@ -1,0 +1,14 @@
+
+//promise example
+
+const p = new Promise((resolve,reject)=>{
+    let a=4;
+    if(a==2){
+        resolve('Sucess');
+    }
+    else{
+        reject('Failed')
+    }
+})
+p.then((message)=>console.log(message))
+.catch((message)=>console.log("this is catch message:"+message))
